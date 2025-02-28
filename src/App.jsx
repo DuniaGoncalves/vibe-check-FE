@@ -1,9 +1,24 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+
 const App = () => {
   // add state for mood and note
-  // add function to handle form submission
- 
+  const [mood, setMood] = useState('');
+  const [note, setNote] = useState('');
+  const [moods, setMoods] = useState([]);
 
+  // add function to handle form submission
  // fetch moods from backend
+const fetchMoodsAPI = async () => {
+  const response = await axios.get('http://localhost:8787/api');
+  setMoods(response.data.moods);
+  console.log(response.data.moods);
+}
+
+useEffect(() => {
+  fetchMoodsAPI();
+}, []);
+
  // add mood
  // delete mood
 
@@ -26,7 +41,16 @@ const App = () => {
         />
         <button type="submit">Submit</button>
       </form>
-      {/* display previous moods   */}
+      {/* display previous moods and notes */}
+      <h2>Vibe Out</h2>
+      <ul>
+        {moods.map((mood, index) => (
+          <li key={index}>
+            {mood} and note
+            <button>Delete</button>
+          </li>
+        ))}
+      </ul>
     </>
   )
 }
