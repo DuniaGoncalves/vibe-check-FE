@@ -1,4 +1,12 @@
 const App = () => {
+  // add state for mood and note
+  // add function to handle form submission
+ 
+
+ // fetch moods from backend
+ // add mood
+ // delete mood
+
   return(
     <>
       <h1>Vibe Check - Mood Journal</h1>
