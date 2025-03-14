@@ -1,12 +1,64 @@
-# React + Vite
+# VibeCheck - Mood Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple mood journaling app that allows users to record and reflect on their daily moods and notes. Built using React for the frontend and Express for the backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display a list of moods from the backend
+- Users can input their current mood and add a note
 
-## Expanding the ESLint configuration
+## Definition of Done
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Display moods from the backend
+- [ ] Users can add a mood and note
+- [ ] Users can delete a mood entry
+- [ ] Implement persistent storage for moods (e.g., JSON file or database)
+- [ ] Input validation to ensure mood and note are not empty
+- [ ] Improve UI/UX for better user experience
+
+## To-Do
+
+- [ ] Implement form submission to add a mood and note
+- [ ] Allow users to delete a mood
+- [ ] Store moods and notes persistently on the backend
+- [ ] Add input validation (ensure mood and note are not empty)
+- [ ] Improve the form UI/UX
+- [ ] Enhance error handling for API requests
+- [ ] Clean up and organize project structure
+
+## Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/vibecheck.git
+   cd vibecheck
+   ```
+
+2. Install dependencies for both frontend and backend:
+
+   ```bash
+   # In the root directory
+   npm install
+
+   # Navigate to the backend folder (if applicable)
+   cd backend
+   npm install
+   ```
+
+3. Start the backend server:
+
+   ```bash
+   node index.js
+   ```
+
+4. Start the React frontend:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+1. Record your current mood and add a note.
+2. View past mood entries.
+3. Delete mood entries (upcoming feature).
