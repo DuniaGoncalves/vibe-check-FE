@@ -31,8 +31,8 @@ A simple mood journaling app that allows users to record and reflect on their da
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/vibecheck.git
-   cd vibecheck
+   git clone https://github.com/DuniaGoncalves/vibe-check-FE.git
+   cd vibe-check-FE
    ```
 
 2. Install dependencies for both frontend and backend:
@@ -42,14 +42,14 @@ A simple mood journaling app that allows users to record and reflect on their da
    npm install
 
    # Navigate to the backend folder (if applicable)
-   cd backend
+   cd vibe-check-BE
    npm install
    ```
 
 3. Start the backend server:
 
    ```bash
-   node index.js
+   npm start
    ```
 
 4. Start the React frontend:
